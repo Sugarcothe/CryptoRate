@@ -6,7 +6,6 @@ import AliceCarousel from "react-alice-carousel";
 import { Link } from "react-router-dom";
 import { TrendingCoins } from "../../config/api";
 import { CryptoState } from "../../CryptoContext";
-import { numberWithCommas } from "../CoinsTable";
 
 const Carousel = () => {
   const [trending, setTrending] = useState([]);
@@ -67,7 +66,7 @@ const Carousel = () => {
           </span>
         </span>
         <span style={{ fontSize: 22, fontWeight: 500 }}>
-          {symbol} {numberWithCommas(coin?.current_price.toFixed(2))}
+          {/* {symbol} {numberWithCommas(coin?.current_price.toFixed(2))} */}
         </span>
       </Link>
     );

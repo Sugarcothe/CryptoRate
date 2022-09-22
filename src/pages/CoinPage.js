@@ -10,7 +10,6 @@ import { useParams } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 import CoinInfo from "../components/CoinInfo";
 import { SingleCoin } from "../config/api";
-import { numberWithCommas } from "../components/CoinsTable";
 import { CryptoState } from "../CryptoContext";
 import React from "react";
 import { doc, setDoc } from "firebase/firestore";
@@ -159,7 +158,7 @@ const CoinPage = () => {
                 fontFamily: "Montserrat",
               }}
             >
-              {numberWithCommas(coin?.market_cap_rank)}
+              
             </Typography>
           </span>
 
@@ -175,9 +174,9 @@ const CoinPage = () => {
               }}
             >
               {symbol}{" "}
-              {numberWithCommas(
+              {/* {numberWithCommas(
                 coin?.market_data.current_price[currency.toLowerCase()]
-              )}
+              )} */}
             </Typography>
           </span>
           <span style={{ display: "flex" }}>
@@ -192,11 +191,11 @@ const CoinPage = () => {
               }}
             >
               {symbol}{" "}
-              {numberWithCommas(
+              {/* {numberWithCommas(
                 coin?.market_data.market_cap[currency.toLowerCase()]
                   .toString()
                   .slice(0, -6)
-              )}
+              )} */}
               M
             </Typography>
           </span>

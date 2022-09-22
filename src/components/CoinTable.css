@@ -1,0 +1,30 @@
+.table {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.table-head {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;    
+    justify-content: center;
+    margin-right: 3rem;
+    justify-content: space-around;
+}
+
+.header-hr {
+    Margin-bottom: 20px;
+}
+
+.table-card {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;    
+    justify-content: center;
+    margin-right: 3rem;
+    justify-content: space-around;
+}
+
+.line-1 {
+    display: inline-block;
+}
